@@ -2375,10 +2375,22 @@
 		(uuid "98a84612-5b22-457a-a675-89c5628c12ed")
 	)
 	(junction
+		(at 73.66 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a5d1ab0d-1dc6-414f-a411-ed036fac4393")
+	)
+	(junction
 		(at 143.51 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c63cf57e-fe3c-4641-b447-06d6fee64205")
+	)
+	(junction
+		(at 66.04 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df8d6f43-1bce-4839-8d72-df0e2399f134")
 	)
 	(junction
 		(at 185.42 57.15)
@@ -2618,6 +2630,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 54.61) (xy 73.66 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a18d8dc9-f320-4c64-bb6d-fc88af03ecb3")
+	)
+	(wire
+		(pts
 			(xy 125.73 78.74) (xy 109.22 78.74)
 		)
 		(stroke
@@ -2787,97 +2809,6 @@
 		(uuid "bd3d37a6-8069-4584-87ae-94ce5907dd60")
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 62.23 54.61 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0ec26fe3-9f90-4db4-bacc-2cd907ec2e7d")
-		(property "Reference" "D1"
-			(at 60.6425 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 60.6425 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 62.23 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 62.23 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 62.23 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0847d1bd-3ad3-4e13-b0ab-8ede01ef7170")
-		)
-		(pin "1"
-			(uuid "a23ca2a1-2128-467e-9511-63564d07c3c8")
-		)
-		(instances
-			(project "hrsens"
-				(path "/09ffb508-3adc-42c4-a9ef-725b163c0095"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Hackclub Symbols:OLED_0.91_128x32")
 		(at 49.53 40.64 0)
 		(unit 1)
@@ -2967,7 +2898,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 69.85 54.61 90)
+		(at 62.23 54.61 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2978,7 +2909,7 @@
 		(fields_autoplaced yes)
 		(uuid "1ea65221-bf6d-42af-9ca4-82e51e3d955e")
 		(property "Reference" "R3"
-			(at 69.85 48.26 90)
+			(at 62.23 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2988,7 +2919,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 69.85 50.8 90)
+			(at 62.23 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2998,7 +2929,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 69.85 56.388 90)
+			(at 62.23 56.388 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3009,7 +2940,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 54.61 0)
+			(at 62.23 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3020,7 +2951,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 69.85 54.61 0)
+			(at 62.23 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3958,6 +3889,97 @@
 			(project "hrsens"
 				(path "/09ffb508-3adc-42c4-a9ef-725b163c0095"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 69.85 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "626f42df-6f66-48af-bf56-40d97bc6375a")
+		(property "Reference" "D1"
+			(at 68.2625 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 68.2625 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 69.85 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 69.85 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 69.85 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5a5c33da-4e64-4336-9a88-4bf7bb4b2b51")
+		)
+		(pin "1"
+			(uuid "4bb9763b-3415-42d4-ac3f-c08de5fdc6f3")
+		)
+		(instances
+			(project "hrsens"
+				(path "/09ffb508-3adc-42c4-a9ef-725b163c0095"
+					(reference "D1")
 					(unit 1)
 				)
 			)
